@@ -13,8 +13,6 @@ gem 'bootstrap-sass', '~> 3.3.4'
 gem 'sass-rails', '~> 4.0.3'
 gem 'font-awesome-rails'
 gem "autoprefixer-rails"
-gem 'compass-rails'
-gem 'compass-h5bp'
 gem "respond-rails", "~> 1.0"
 
 #angular
@@ -92,11 +90,16 @@ group :development do
 	gem 'capistrano-rails',	'~> 1.1'
 	gem "cap-ec2"
 	gem 'better_errors'
-	gem 'binding_of_caller'
-	gem 'spring'
-	gem 'ezstartforme', git: 'https://git@github.com/lutusu/ezstartforme.git'
+ 	gem 'binding_of_caller'
+ 	gem 'spring'
+ 	gem 'ezstartforme', git: 'https://git@github.com/lutusu/ezstartforme.git'
 end
 
 group :production do 
 	gem 'unicorn'
+end
+
+group :assets do
+	gem 'compass-rails', git: 'https://git@github.com/lutusu/compass-rails.git'
+	gem 'compass-h5bp'
 end
