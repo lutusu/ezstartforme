@@ -27,7 +27,7 @@ module Ez
 			def set_up_gems
 				generate	'simple_form:install --bootstrap'	if gems?	'simple_form'
 				generate	'nested_form:install' 						if gems?	'nested_form'
-				run 'compass install bootstrap -r bootstrap-sass --app-dir vendor/assets/'
+				run 'compass install bootstrap -r bootstrap-sass'
 				generate	'rspec:install'										if gems?	'rspec'
 				generate	'html5:install'										if gems?	'compass-h5bp'
 				rake	'haml:erb2haml'												if gems?	'haml-rails'
