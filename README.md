@@ -22,7 +22,13 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Create new rails project
+	
+		$ rails new test_app
+
+Then install ezstartfome and set up project by command
+
+		$ rails generate ez:set_up
 
 ## Development
 
